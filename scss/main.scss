@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700");
+
+$color1: #e2f3f5;
+$color2: #22d1ee;
+$color3: #3d5af1;
+$color4: #0e153a;
+$color5: #f07167;
+
+* {
+  box-sizing: border-box;
+  color: white;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: Oswald;
+  font-weight: 200;
+}
+h1,
+h2 {
+  font-weight: 200;
+}
+body * {
+  padding: 0 100px;
+}
+header {
+  height: 70vh;
+  background-color: $color1;
+}
+section {
+  height: 500px;
+}
+.services {
+  background-color: $color2;
+}
+.depos {
+  background-color: $color3;
+}
+.articles {
+  background: $color4;
+}
+.contact {
+  background-color: $color5;
+}
+footer {
+  background-color: $color2;
+}
