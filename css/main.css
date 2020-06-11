@@ -44,6 +44,10 @@ nav ul {
           flex-direction: row;
 }
 
+nav li {
+  background-color: red;
+}
+
 header {
   width: 100%;
   margin: 0;
