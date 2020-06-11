@@ -5,27 +5,68 @@ $color2: #22d1ee;
 $color3: #3d5af1;
 $color4: #0e153a;
 $color5: #f07167;
-
+$indent: 50px;
+@mixin order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 * {
   box-sizing: border-box;
   color: white;
-  margin: 0;
+  margin: 0 auto;
 }
 body {
-  margin: 0;
+  // margin: 0 auto;
   font-family: Oswald;
   font-weight: 200;
-}
-h1,
-h2 {
-  font-weight: 200;
+  background-color: yellow;
 }
 body * {
   padding: 0 100px;
 }
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // width: 100%;
+  box-sizing: border-box;
+  // @include order();
+  height: 60px;
+  // padding: 0 20px;
+  background-color: black;
+  z-index: 10;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+// nav * {
+//   font-size: 12px;
+// }
+
 header {
-  height: 70vh;
-  background-color: $color1;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  /* background: url("../img/heropic1.jpg") no-repeat center; */
+  background: url("https://picsum.photos/2000?grayscale") no-repeat center;
+  background-attachment: fixed;
+  background-image: opacity(30%);
+  background-size: cover;
+  background-color: #000;
+}
+h1 {
+  font-weight: 200;
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 1em;
 }
 section {
   height: 500px;
