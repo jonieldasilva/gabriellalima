@@ -24,7 +24,7 @@ Tags: Website
 body {
   font-family: Raleway;
   background-color: #f2ecdc;
-  margin: 20px;
+  margin: 15px;
 }
 
 nav {
@@ -32,6 +32,45 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+nav * {
+  text-transform: uppercase;
+  color: #f2ecdc;
+  font-family: Raleway;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+nav p {
+  font-size: 8px;
+}
+
+@-webkit-keyframes example {
+  from {
+    background-color: #f2ecdc;
+  }
+  to {
+    background-color: #25afba;
+  }
+}
+
+@keyframes example {
+  from {
+    background-color: #f2ecdc;
+  }
+  to {
+    background-color: #25afba;
+  }
 }
 
 header {
@@ -48,19 +87,19 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #25afba;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   height: 80vh;
+  background: url(../img/ornament.svg) no-repeat;
+  background-color: #25afba;
+  background-size: 500px;
+  background-position: -100px 200px;
 }
 
 header * {
   color: #f2ecdc;
-}
-
-header .ornamento {
-  position: absolute;
-  width: 400px;
-  top: 40vh;
-  left: 0;
 }
 
 header h1 {
@@ -128,8 +167,19 @@ footer {
   body {
     margin: 0;
   }
+  nav {
+    margin: 0 auto;
+    width: 100%;
+  }
+  header {
+    background-size: 350px;
+    background-position: -100px 300px;
+  }
   header h1 {
     font-size: 50px;
+  }
+  header .signature {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */

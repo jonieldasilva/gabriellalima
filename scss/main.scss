@@ -32,28 +32,58 @@ $indent: 50px;
 body {
   font-family: Raleway;
   background-color: $color1;
-  margin: 20px;
+  margin: 15px;
 }
 nav {
   position: absolute;
   display: flex;
+  padding: 20px 30px;
+  // background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  * {
+    text-transform: uppercase;
+    color: $color1;
+    font-family: Raleway;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+  p {
+    font-size: 8px;
+  }
+}
+
+@keyframes example {
+  from {
+    background-color: $color1;
+  }
+  to {
+    background-color: $color3;
+  }
 }
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: $color3;
+  animation-name: example;
+  animation-duration: 1s;
   height: 80vh;
   * {
     color: $color1;
   }
-  .ornamento {
-    position: absolute;
-    width: 400px;
-    top: 40vh;
-    left: 0;
-  }
+  background: url(../img/ornament.svg) no-repeat;
+  background-color: $color3;
+  background-size: 500px;
+  background-position: -100px 200px;
+  // .ornamento {
+  //   position: absolute;
+  //   width: 400px;
+  //   top: 40vh;
+  //   left: 0;
+  // }
   h1 {
     font-family: "TT Bluescreens Light";
     text-transform: uppercase;
@@ -107,9 +137,24 @@ footer {
   body {
     margin: 0;
   }
+  nav {
+    margin: 0 auto;
+    width: 100%;
+  }
   header {
+    background-size: 350px;
+    background-position: -100px 300px;
+    // .ornamento {
+    //   position: absolute;
+    //   width: 300px;
+    //   top: 400px;
+    //   left: 0;
+    // }
     h1 {
       font-size: 50px;
+    }
+    .signature {
+      width: 60%;
     }
   }
 }
