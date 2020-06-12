@@ -1,58 +1,40 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700");
+/*
+
+Author: Joniel da Silva
+Author URI: https://jonieldasilva.com
+Tags: Website
+
+*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,regular,500,600,700");
+@font-face {
+  font-family: "TT Bluescreens Light";
+  src: url("TTBluescreens-Light.eot");
+  /* IE9 Compat Mod  es */
+  src: url("TTBluescreens-Light.eot?#iefix") format("embedded-opentype"), url("TTBluescreens-Light.woff") format("woff"), url("TTBluescreens-Light.ttf") format("truetype"), url("TTBluescreens-Light.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: white;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: Oswald;
-  font-weight: 200;
-  background-color: yellow;
-}
-
-body * {
-  padding: 0 100px;
+  font-family: Raleway;
+  background-color: #f2ecdc;
+  margin: 20px;
 }
 
 nav {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 60px;
-  background-color: black;
-  z-index: 10;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-nav li {
-  background-color: red;
 }
 
 header {
-  width: 100%;
-  margin: 0;
-  top: 0;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,21 +48,55 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* background: url("../img/heropic1.jpg") no-repeat center; */
-  background: url("https://picsum.photos/2000?grayscale") no-repeat center;
-  background-attachment: fixed;
-  background-image: opacity(30%);
-  background-size: cover;
-  background-color: #000;
+  background-color: #25afba;
+  height: 80vh;
 }
 
-h1 {
-  font-weight: 200;
-  font-size: 70px;
+header * {
+  color: #f2ecdc;
+}
+
+header .ornamento {
+  position: absolute;
+  width: 400px;
+  top: 40vh;
+  left: 0;
+}
+
+header h1 {
+  font-family: "TT Bluescreens Light";
   text-transform: uppercase;
-  line-height: 1em;
+  font-size: 5em;
+  text-align: center;
+  line-height: 0.9em;
+  margin-bottom: 10px;
+}
+
+header .signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 30%;
+}
+
+header .linha {
+  margin: 0 20px;
+  height: 1px;
+  width: 100px;
+  background-color: #f2ecdc;
+}
+
+header h4 {
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 200;
 }
 
 section {
@@ -88,22 +104,32 @@ section {
 }
 
 .services {
-  background-color: #22d1ee;
+  background-color: #1a81a8;
 }
 
 .depos {
-  background-color: #3d5af1;
+  background-color: #25afba;
 }
 
 .articles {
-  background: #0e153a;
+  background: #f07168;
 }
 
 .contact {
-  background-color: #f07167;
+  background-color: #333333;
 }
 
 footer {
-  background-color: #22d1ee;
+  background-color: #1a81a8;
+}
+
+/* font-style font-variant font-weight font-size/line-height font-family*/
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  header h1 {
+    font-size: 50px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

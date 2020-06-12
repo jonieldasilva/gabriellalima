@@ -1,75 +1,86 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700");
+/*
 
-$color1: #e2f3f5;
-$color2: #22d1ee;
-$color3: #3d5af1;
-$color4: #0e153a;
-$color5: #f07167;
-$indent: 50px;
-@mixin order {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+Author: Joniel da Silva
+Author URI: https://jonieldasilva.com
+Tags: Website
+
+*/
+@font-face {
+  font-family: "TT Bluescreens Light";
+  src: url("TTBluescreens-Light.eot"); /* IE9 Compat Mod  es */
+  src: url("TTBluescreens-Light.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("TTBluescreens-Light.woff") format("woff"),
+    /* Modern Browsers */ url("TTBluescreens-Light.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("TTBluescreens-Light.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
 }
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,regular,500,600,700");
+
+$color1: #f2ecdc;
+$color2: #1a81a8;
+$color3: #25afba;
+$color4: #f07168;
+$color5: #333333;
+$indent: 50px;
+
 * {
   box-sizing: border-box;
-  color: white;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 body {
-  // margin: 0 auto;
-  font-family: Oswald;
-  font-weight: 200;
-  background-color: yellow;
-}
-body * {
-  padding: 0 100px;
+  font-family: Raleway;
+  background-color: $color1;
+  margin: 20px;
 }
 nav {
+  position: absolute;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  // width: 100%;
-  box-sizing: border-box;
-  // @include order();
-  height: 60px;
-  // padding: 0 20px;
-  background-color: black;
-  z-index: 10;
 }
-nav ul {
-  display: flex;
-  flex-direction: row;
-}
-nav li {
-  background-color: red;
-}
-// nav * {
-//   font-size: 12px;
-// }
-
 header {
-  width: 100%;
-  margin: 0;
-  top: 0;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-sizing: border-box;
-  /* background: url("../img/heropic1.jpg") no-repeat center; */
-  background: url("https://picsum.photos/2000?grayscale") no-repeat center;
-  background-attachment: fixed;
-  background-image: opacity(30%);
-  background-size: cover;
-  background-color: #000;
-}
-h1 {
-  font-weight: 200;
-  font-size: 70px;
-  text-transform: uppercase;
-  line-height: 1em;
+  background-color: $color3;
+  height: 80vh;
+  * {
+    color: $color1;
+  }
+  .ornamento {
+    position: absolute;
+    width: 400px;
+    top: 40vh;
+    left: 0;
+  }
+  h1 {
+    font-family: "TT Bluescreens Light";
+    text-transform: uppercase;
+    font-size: 5em;
+    text-align: center;
+    line-height: 0.9em;
+    margin-bottom: 10px;
+  }
+  .signature {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+  }
+  .linha {
+    margin: 0 20px;
+    // content: "";
+    height: 1px;
+    width: 100px;
+    background-color: $color1;
+  }
+  h4 {
+    font-family: Raleway;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 200;
+  }
 }
 section {
   height: 500px;
@@ -88,4 +99,17 @@ section {
 }
 footer {
   background-color: $color2;
+}
+
+/* font-style font-variant font-weight font-size/line-height font-family*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  header {
+    h1 {
+      font-size: 50px;
+    }
+  }
 }
