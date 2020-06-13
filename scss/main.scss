@@ -53,7 +53,14 @@ body {
     font-size: 8px;
   }
 }*/
-
+h4 {
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: center;
+}
 @keyframes example {
   from {
     background-color: $color1;
@@ -140,20 +147,14 @@ header {
     width: 100px;
     background-color: $color1;
   }
-  h4 {
-    font-family: Raleway;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 200;
-  }
 }
 main {
-  // padding: 0 100px;
+  /********** INTRO SECTION *********/
   .intro-section {
     background-color: $color1;
     position: sticky;
-    z-index: 1;
     top: 0;
+    z-index: 10;
     padding: 100px 100px 200px 100px;
     display: flex;
     flex-direction: column;
@@ -180,19 +181,73 @@ main {
       line-height: 1.5em;
     }
   }
+  /********** SERVICE SECTION *********/
   .service-section {
     position: sticky;
-    z-index: 2;
+    z-index: 20;
+    top: 0;
     background-color: $color3;
-    height: 700px;
+    // height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 100px 100px 100px 100px;
+    color: $color1;
     h1 {
       font-weight: 200;
-      color: $color1;
       font-size: 60px;
+      margin-bottom: 10px;
+    }
+    h4 {
+      margin-bottom: 100px;
+    }
+
+    .service-list {
+      width: 100%;
+      display: grid;
+      // align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-gap: 1rem;
+      color: $color1;
+
+      ul {
+        li {
+          display: block;
+          // width: 200px;
+          margin-bottom: 10px;
+        }
+        li:before {
+          content: "\2713";
+          display: inline-block;
+          color: $color1;
+          padding: 0 6px 0 0;
+        }
+      }
+    }
+  }
+  /********** ARTICLE SECTION *********/
+  .article {
+    position: sticky;
+    z-index: 30;
+    top: 0;
+    padding: 100px 350px 100px 100px;
+    background-color: $color1;
+    h1 {
+      font-weight: 200;
+      font-size: 50px;
+      margin-bottom: 10px;
+      color: $color3;
+    }
+    h4 {
+      color: $color3;
+      text-align: left;
+    }
+    p {
+      color: #585858;
+      font-weight: 200;
+      // text-align: center;
+      font-size: 16px;
+      line-height: 1.5em;
     }
   }
 }
@@ -250,9 +305,37 @@ main {
         height: 70px;
         margin-bottom: 30px;
       }
+
       p {
         font-size: 14px;
         text-align: left;
+      }
+    }
+    .service-section {
+      padding: 50px 24px 100px 24px;
+
+      h1 {
+        font-size: 40px;
+      }
+      h4 {
+        margin-bottom: 20px;
+      }
+      .service-list {
+        grid-gap: 0;
+      }
+      li {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+    .article {
+      padding: 100px 50px 70px 24px;
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 14px;
       }
     }
   }

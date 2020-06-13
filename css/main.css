@@ -46,6 +46,15 @@ body {
     font-size: 8px;
   }
 }*/
+h4 {
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
 @-webkit-keyframes example {
   from {
     background-color: #f2ecdc;
@@ -54,6 +63,7 @@ body {
     background-color: #25afba;
   }
 }
+
 @keyframes example {
   from {
     background-color: #f2ecdc;
@@ -170,19 +180,18 @@ header .linha {
   background-color: #f2ecdc;
 }
 
-header h4 {
-  font-family: Raleway;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 200;
+main {
+  /********** INTRO SECTION *********/
+  /********** SERVICE SECTION *********/
+  /********** ARTICLE SECTION *********/
 }
 
 main .intro-section {
   background-color: #f2ecdc;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 1;
   top: 0;
+  z-index: 10;
   padding: 100px 100px 200px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,9 +234,9 @@ main .intro-section p strong {
 main .service-section {
   position: -webkit-sticky;
   position: sticky;
-  z-index: 2;
+  z-index: 20;
+  top: 0;
   background-color: #25afba;
-  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,15 +247,68 @@ main .service-section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 100px 100px 100px 100px;
+  color: #f2ecdc;
 }
 
 main .service-section h1 {
   font-weight: 200;
-  color: #f2ecdc;
   font-size: 60px;
+  margin-bottom: 10px;
+}
+
+main .service-section h4 {
+  margin-bottom: 100px;
+}
+
+main .service-section .service-list {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1rem;
+  color: #f2ecdc;
+}
+
+main .service-section .service-list ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+main .service-section .service-list ul li:before {
+  content: "\2713";
+  display: inline-block;
+  color: #f2ecdc;
+  padding: 0 6px 0 0;
+}
+
+main .article {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 30;
+  top: 0;
+  padding: 100px 350px 100px 100px;
+  background-color: #f2ecdc;
+}
+
+main .article h1 {
+  font-weight: 200;
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #25afba;
+}
+
+main .article h4 {
+  color: #25afba;
+  text-align: left;
+}
+
+main .article p {
+  color: #585858;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 /* font-style font-variant font-weight font-size/line-height font-family*/
@@ -290,6 +352,31 @@ main .service-section h1 {
   main .intro-section p {
     font-size: 14px;
     text-align: left;
+  }
+  main .service-section {
+    padding: 50px 24px 100px 24px;
+  }
+  main .service-section h1 {
+    font-size: 40px;
+  }
+  main .service-section h4 {
+    margin-bottom: 20px;
+  }
+  main .service-section .service-list {
+    grid-gap: 0;
+  }
+  main .service-section li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  main .article {
+    padding: 100px 50px 70px 24px;
+  }
+  main .article h1 {
+    font-size: 40px;
+  }
+  main .article p {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
