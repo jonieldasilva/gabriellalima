@@ -55,6 +55,17 @@ h4 {
   text-align: center;
 }
 
+button {
+  background-color: #fff;
+  padding: 20px 30px;
+  color: #25afba;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 200;
+  border-radius: 5px;
+}
+
 @-webkit-keyframes example {
   from {
     background-color: #f2ecdc;
@@ -283,32 +294,33 @@ main .service-section .service-list ul li:before {
   padding: 0 6px 0 0;
 }
 
-main .article {
+main .article-section {
   position: -webkit-sticky;
   position: sticky;
   z-index: 30;
   top: 0;
-  padding: 100px 350px 100px 100px;
+  padding: 100px 450px 100px 100px;
   background-color: #f2ecdc;
 }
 
-main .article h1 {
+main .article-section h1 {
   font-weight: 200;
   font-size: 50px;
   margin-bottom: 10px;
   color: #25afba;
+  margin-bottom: 40px;
 }
 
-main .article h4 {
+main .article-section h4 {
   color: #25afba;
   text-align: left;
 }
 
-main .article p {
+main .article-section p {
   color: #585858;
   font-weight: 200;
-  font-size: 16px;
-  line-height: 1.5em;
+  font-size: 18px;
+  line-height: 1.8em;
 }
 
 /* font-style font-variant font-weight font-size/line-height font-family*/
@@ -369,13 +381,13 @@ main .article p {
     font-size: 14px;
     margin-bottom: 10px;
   }
-  main .article {
+  main .article-section {
     padding: 100px 50px 70px 24px;
   }
-  main .article h1 {
+  main .article-section h1 {
     font-size: 40px;
   }
-  main .article p {
+  main .article-section p {
     font-size: 14px;
   }
 }
