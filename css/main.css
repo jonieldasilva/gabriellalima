@@ -28,31 +28,24 @@ body {
   margin: 15px;
 }
 
-nav {
+/*nav {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 20px 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  // background-color: black;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-}
-
-nav p {
-  text-transform: uppercase;
-  color: #f2ecdc;
-  font-family: Raleway;
-  font-weight: 300;
-  text-align: center;
-  letter-spacing: 4px;
-  font-size: 8px;
-}
-
+  p {
+    text-transform: uppercase;
+    color: $color1;
+    font-family: Raleway;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 8px;
+  }
+}*/
 @-webkit-keyframes example {
   from {
     background-color: #f2ecdc;
@@ -61,7 +54,6 @@ nav p {
     background-color: #25afba;
   }
 }
-
 @keyframes example {
   from {
     background-color: #f2ecdc;
@@ -79,22 +71,56 @@ header {
   position: sticky;
   top: 0;
   z-index: -1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-animation-name: example;
           animation-name: example;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   height: 90vh;
-  background: url(../img/bg1.jpg) no-repeat;
+  /*header sem ornamento*/
+  /*header com ornamento*/
+  background: url(../img/ornament.svg) no-repeat, url(../img/bg1.jpg) no-repeat;
   background-color: #25afba;
-  background-size: cover;
-  background-position: center center;
+  background-size: 40vh, cover;
+  background-position: -100px 60vh, center center;
 }
 
 header * {
   color: #f2ecdc;
+}
+
+header .logo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  width: 200px;
+}
+
+header .logo p {
+  text-transform: uppercase;
+  color: #f2ecdc;
+  font-family: Raleway;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 8px;
 }
 
 header .headergroup {
@@ -113,7 +139,7 @@ header .headergroup {
       -ms-flex-pack: center;
           justify-content: center;
   height: 300px;
-  top: 200px;
+  top: 100px;
 }
 
 header h1 {
@@ -123,10 +149,9 @@ header h1 {
   text-align: center;
   line-height: 0.9em;
   margin-bottom: 10px;
-  text-shadow: 0 0 40px #1a81a8;
 }
 
-header .signature {
+header .quote-signature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,20 +231,23 @@ main .intro-section p strong {
     padding: 50px 0;
     width: 100%;
   }
-  #signlogo {
+  #logosign {
     width: 200px;
   }
   header {
     padding: 0 10px;
     height: 500px;
   }
+  header .logo {
+    top: 10px;
+  }
   header .headergroup {
-    top: 100px;
+    top: 20px;
   }
   header h1 {
     font-size: 50px;
   }
-  header .signature {
+  header .quote-signature {
     width: 80%;
   }
   header .linha {

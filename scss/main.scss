@@ -35,7 +35,7 @@ body {
   background-color: $color1;
   margin: 15px;
 }
-nav {
+/*nav {
   position: absolute;
   display: flex;
   padding: 20px 30px;
@@ -52,7 +52,7 @@ nav {
     letter-spacing: 4px;
     font-size: 8px;
   }
-}
+}*/
 
 @keyframes example {
   from {
@@ -72,26 +72,43 @@ header {
   top: 0;
   z-index: -1;
   // align-items: center;
-  justify-content: center;
-  // flex-direction: column;
+  // justify-content: center;
+  flex-direction: column;
   animation-name: example;
   animation-duration: 1s;
   height: 90vh;
-  background: url(../img/bg1.jpg) no-repeat;
-  background-color: $color3;
-  background-size: cover;
-  background-position: center center;
-  // background: url(../img/ornament.svg) no-repeat, url(../img/bg1.jpg) no-repeat;
+  /*header sem ornamento*/
+  // background: url(../img/bg1.jpg) no-repeat;
   // background-color: $color3;
-  // background-size: 90vh, cover;
-  // background-position: -100px 200px, center center;
-  // padding: 0 20%;
-  // .ornamento {
-  //   position: absolute;
-  //   width: 400px;
-  //   top: 40vh;
-  //   left: 0;
-  // }
+  // background-size: cover;
+  // background-position: center center;
+  /*header com ornamento*/
+  background: url(../img/ornament.svg) no-repeat, url(../img/bg1.jpg) no-repeat;
+  background-color: $color3;
+  background-size: 40vh, cover;
+  background-position: -100px 60vh, center center;
+  .logo {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+    height: 100px;
+    width: 200px;
+
+    p {
+      text-transform: uppercase;
+      color: $color1;
+      font-family: Raleway;
+      font-weight: 300;
+      text-align: center;
+      letter-spacing: 4px;
+      font-size: 8px;
+    }
+  }
   .headergroup {
     position: relative;
     display: flex;
@@ -99,7 +116,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 300px;
-    top: 200px;
+    top: 100px;
   }
   h1 {
     font-family: "TT Bluescreens Thin";
@@ -108,9 +125,9 @@ header {
     text-align: center;
     line-height: 0.9em;
     margin-bottom: 10px;
-    text-shadow: 0 0 40px $color2;
+    // text-shadow: 0 0 40px $color2;
   }
-  .signature {
+  .quote-signature {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -172,7 +189,7 @@ main {
     padding: 50px 0;
     width: 100%;
   }
-  #signlogo {
+  #logosign {
     width: 200px;
   }
   header {
@@ -186,13 +203,16 @@ main {
     //   top: 400px;
     //   left: 0;
     // }
+    .logo {
+      top: 10px;
+    }
     .headergroup {
-      top: 100px;
+      top: 20px;
     }
     h1 {
       font-size: 50px;
     }
-    .signature {
+    .quote-signature {
       width: 80%;
     }
     .linha {
