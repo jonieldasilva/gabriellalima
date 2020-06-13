@@ -144,6 +144,8 @@ footer {
   header {
     background-size: 350px;
     background-position: -100px 300px;
+    padding: 0 10px;
+    height: 100vh;
     // .ornamento {
     //   position: absolute;
     //   width: 300px;
@@ -154,7 +156,13 @@ footer {
       font-size: 50px;
     }
     .signature {
-      width: 60%;
+      width: 80%;
+    }
+    .linha {
+      margin: 0 10px;
+      height: 1px;
+      width: 40px;
+      background-color: $color1;
     }
   }
 }
