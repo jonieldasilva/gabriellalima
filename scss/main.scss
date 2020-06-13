@@ -6,12 +6,12 @@ Tags: Website
 
 */
 @font-face {
-  font-family: "TT Bluescreens Light";
-  src: url("TTBluescreens-Light.eot"); /* IE9 Compat Mod  es */
-  src: url("TTBluescreens-Light.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("TTBluescreens-Light.woff") format("woff"),
-    /* Modern Browsers */ url("TTBluescreens-Light.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("TTBluescreens-Light.svg#svgFontName")
+  font-family: "TT Bluescreens Thin";
+  src: url("TTBluescreens-Thin.eot"); /* IE9 Compat Mod  es */
+  src: url("TTBluescreens-Thin.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("TTBluescreens-Thin.woff") format("woff"),
+    /* Modern Browsers */ url("TTBluescreens-Thin.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("TTBluescreens-Thin.svg#svgFontName")
       format("svg"); /* Legacy iOS */
 }
 
@@ -30,6 +30,7 @@ $indent: 50px;
   padding: 0;
 }
 body {
+  visibility: visible;
   font-family: Raleway;
   background-color: $color1;
   margin: 15px;
@@ -62,39 +63,55 @@ nav {
   }
 }
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  animation-name: example;
-  animation-duration: 1s;
-  height: 80vh;
   * {
     color: $color1;
   }
-  background: url(../img/ornament.svg) no-repeat;
+
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  // flex-direction: column;
+  animation-name: example;
+  animation-duration: 1s;
+  height: 90vh;
+  background: url(../img/bg1.jpg) no-repeat;
   background-color: $color3;
-  background-size: 500px;
-  background-position: -100px 200px;
+  background-size: cover;
+  background-position: center center;
+  // background: url(../img/ornament.svg) no-repeat, url(../img/bg1.jpg) no-repeat;
+  // background-color: $color3;
+  // background-size: 90vh, cover;
+  // background-position: -100px 200px, center center;
+  // padding: 0 20%;
   // .ornamento {
   //   position: absolute;
   //   width: 400px;
   //   top: 40vh;
   //   left: 0;
   // }
+  .headergroup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    top: 200px;
+  }
   h1 {
-    font-family: "TT Bluescreens Light";
+    font-family: "TT Bluescreens Thin";
     text-transform: uppercase;
     font-size: 5em;
     text-align: center;
     line-height: 0.9em;
     margin-bottom: 10px;
+    text-shadow: 0 0 40px $color2;
   }
   .signature {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 30%;
+    // width: 30%;
   }
   .linha {
     margin: 0 20px;
@@ -144,8 +161,8 @@ footer {
     width: 200px;
   }
   header {
-    background-size: 350px;
-    background-position: -100px 300px;
+    // background-size: 350px, cover;
+    // background-position: -100px 300px, 0;
     padding: 0 10px;
     height: 500px;
     // .ornamento {
@@ -154,9 +171,11 @@ footer {
     //   top: 400px;
     //   left: 0;
     // }
+    .headergroup {
+      top: 100px;
+    }
     h1 {
       font-size: 50px;
-      text-shadow: 0 0 40px $color2;
     }
     .signature {
       width: 80%;

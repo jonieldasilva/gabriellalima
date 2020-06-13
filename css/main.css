@@ -7,10 +7,10 @@ Tags: Website
 */
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,regular,500,600,700");
 @font-face {
-  font-family: "TT Bluescreens Light";
-  src: url("TTBluescreens-Light.eot");
+  font-family: "TT Bluescreens Thin";
+  src: url("TTBluescreens-Thin.eot");
   /* IE9 Compat Mod  es */
-  src: url("TTBluescreens-Light.eot?#iefix") format("embedded-opentype"), url("TTBluescreens-Light.woff") format("woff"), url("TTBluescreens-Light.ttf") format("truetype"), url("TTBluescreens-Light.svg#svgFontName") format("svg");
+  src: url("TTBluescreens-Thin.eot?#iefix") format("embedded-opentype"), url("TTBluescreens-Thin.woff") format("woff"), url("TTBluescreens-Thin.ttf") format("truetype"), url("TTBluescreens-Thin.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
@@ -22,6 +22,7 @@ Tags: Website
 }
 
 body {
+  visibility: visible;
   font-family: Raleway;
   background-color: #f2ecdc;
   margin: 15px;
@@ -74,38 +75,51 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-animation-name: example;
           animation-name: example;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  height: 80vh;
-  background: url(../img/ornament.svg) no-repeat;
+  height: 90vh;
+  background: url(../img/bg1.jpg) no-repeat;
   background-color: #25afba;
-  background-size: 500px;
-  background-position: -100px 200px;
+  background-size: cover;
+  background-position: center center;
 }
 
 header * {
   color: #f2ecdc;
 }
 
+header .headergroup {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  top: 200px;
+}
+
 header h1 {
-  font-family: "TT Bluescreens Light";
+  font-family: "TT Bluescreens Thin";
   text-transform: uppercase;
   font-size: 5em;
   text-align: center;
   line-height: 0.9em;
   margin-bottom: 10px;
+  text-shadow: 0 0 40px #1a81a8;
 }
 
 header .signature {
@@ -118,7 +132,6 @@ header .signature {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 30%;
 }
 
 header .linha {
@@ -173,14 +186,14 @@ footer {
     width: 200px;
   }
   header {
-    background-size: 350px;
-    background-position: -100px 300px;
     padding: 0 10px;
     height: 500px;
   }
+  header .headergroup {
+    top: 100px;
+  }
   header h1 {
     font-size: 50px;
-    text-shadow: 0 0 40px #1a81a8;
   }
   header .signature {
     width: 80%;
