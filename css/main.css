@@ -75,6 +75,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: -1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -149,6 +153,7 @@ header h4 {
 }
 
 main {
+  background-color: #f2ecdc;
   padding: 70px 100px;
 }
 

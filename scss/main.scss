@@ -68,6 +68,9 @@ header {
   }
 
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: -1;
   // align-items: center;
   justify-content: center;
   // flex-direction: column;
@@ -128,6 +131,7 @@ header {
   }
 }
 main {
+  background-color: $color1;
   padding: 70px 100px;
   .intro-section {
     display: flex;
