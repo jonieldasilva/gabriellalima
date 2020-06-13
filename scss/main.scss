@@ -149,8 +149,9 @@ header {
 }
 main {
   background-color: $color1;
-  padding: 70px 100px;
+  // padding: 0 100px;
   .intro-section {
+    padding: 100px 0 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,6 +177,19 @@ main {
       line-height: 1.5em;
     }
   }
+  .service-section {
+    background-color: $color3;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-weight: 200;
+      color: $color1;
+      font-size: 60px;
+    }
+  }
 }
 
 /* font-style font-variant font-weight font-size/line-height font-family*/
@@ -184,11 +198,11 @@ main {
   body {
     margin: 0;
   }
-  nav {
-    margin: 0 auto;
-    padding: 50px 0;
-    width: 100%;
-  }
+  // nav {
+  //   margin: 0 auto;
+  //   padding: 50px 0;
+  //   width: 100%;
+  // }
   #logosign {
     width: 200px;
   }
@@ -223,8 +237,9 @@ main {
     }
   }
   main {
-    padding: 50px 24px 70px;
+    // padding: 50px 24px 70px;
     .intro-section {
+      padding: 50px 24px 70px;
       .avatar {
         width: 70px;
         height: 70px;

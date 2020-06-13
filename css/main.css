@@ -179,10 +179,10 @@ header h4 {
 
 main {
   background-color: #f2ecdc;
-  padding: 70px 100px;
 }
 
 main .intro-section {
+  padding: 100px 0 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,15 +221,34 @@ main .intro-section p strong {
   color: #1a81a8;
 }
 
+main .service-section {
+  background-color: #25afba;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .service-section h1 {
+  font-weight: 200;
+  color: #f2ecdc;
+  font-size: 60px;
+}
+
 /* font-style font-variant font-weight font-size/line-height font-family*/
 @media only screen and (max-width: 600px) {
   body {
     margin: 0;
-  }
-  nav {
-    margin: 0 auto;
-    padding: 50px 0;
-    width: 100%;
   }
   #logosign {
     width: 200px;
@@ -256,7 +275,7 @@ main .intro-section p strong {
     width: 40px;
     background-color: #f2ecdc;
   }
-  main {
+  main .intro-section {
     padding: 50px 24px 70px;
   }
   main .intro-section .avatar {
