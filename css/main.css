@@ -70,7 +70,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: -1;
+  z-index: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -177,11 +177,12 @@ header h4 {
   font-weight: 200;
 }
 
-main {
-  background-color: #f2ecdc;
-}
-
 main .intro-section {
+  background-color: #f2ecdc;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
   padding: 100px 100px 200px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,6 +223,9 @@ main .intro-section p strong {
 }
 
 main .service-section {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
   background-color: #25afba;
   height: 700px;
   display: -webkit-box;
