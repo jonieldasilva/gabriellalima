@@ -148,28 +148,47 @@ header h4 {
   font-weight: 200;
 }
 
-section {
-  height: 500px;
+main {
+  padding: 70px 100px;
 }
 
-.services {
-  background-color: #1a81a8;
+main .intro-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.depos {
+main .intro-section .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-bottom: 40px;
   background-color: #25afba;
+  background: url(../img/didi.jpg) no-repeat;
+  background-size: cover;
+  border: 5px solid #25afba;
 }
 
-.articles {
-  background: #f07168;
+main .intro-section p {
+  color: #585858;
+  font-weight: 300;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5em;
 }
 
-.contact {
-  background-color: #333333;
-}
-
-footer {
-  background-color: #1a81a8;
+main .intro-section p strong {
+  color: #1a81a8;
 }
 
 /* font-style font-variant font-weight font-size/line-height font-family*/
@@ -203,6 +222,18 @@ footer {
     height: 1px;
     width: 40px;
     background-color: #f2ecdc;
+  }
+  main {
+    padding: 50px 24px 70px;
+  }
+  main .intro-section .avatar {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px;
+  }
+  main .intro-section p {
+    font-size: 14px;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=main.css.map */

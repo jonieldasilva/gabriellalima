@@ -127,23 +127,34 @@ header {
     font-weight: 200;
   }
 }
-section {
-  height: 500px;
-}
-.services {
-  background-color: $color2;
-}
-.depos {
-  background-color: $color3;
-}
-.articles {
-  background: $color4;
-}
-.contact {
-  background-color: $color5;
-}
-footer {
-  background-color: $color2;
+main {
+  padding: 70px 100px;
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      margin-bottom: 40px;
+      background-color: $color3;
+      background: url(../img/didi.jpg) no-repeat;
+      background-size: cover;
+      border: 5px solid $color3;
+    }
+    p {
+      strong {
+        color: $color2;
+      }
+      color: #585858;
+      font-weight: 300;
+      text-align: center;
+      font-size: 24px;
+      line-height: 1.5em;
+    }
+  }
 }
 
 /* font-style font-variant font-weight font-size/line-height font-family*/
@@ -185,6 +196,20 @@ footer {
       height: 1px;
       width: 40px;
       background-color: $color1;
+    }
+  }
+  main {
+    padding: 50px 24px 70px;
+    .intro-section {
+      .avatar {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 14px;
+        text-align: left;
+      }
     }
   }
 }
