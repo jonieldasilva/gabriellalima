@@ -56,14 +56,26 @@ h4 {
 }
 
 button {
-  background-color: #fff;
-  padding: 20px 30px;
+  display: inline;
+  padding: 15px 20px;
   color: #25afba;
-  border: none;
-  font-size: 18px;
+  border: 1px solid #25afba;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 200;
-  border-radius: 5px;
+  border-radius: 50%;
+}
+
+.title-negative {
+  font-weight: 200;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #f2ecdc;
+  background-color: #25afba;
 }
 
 @-webkit-keyframes example {
@@ -195,6 +207,7 @@ main {
   /********** INTRO SECTION *********/
   /********** SERVICE SECTION *********/
   /********** ARTICLE SECTION *********/
+  /********** TESTIMONIAL SECTION *********/
 }
 
 main .intro-section {
@@ -248,6 +261,7 @@ main .service-section {
   z-index: 20;
   top: 0;
   background-color: #25afba;
+  color: #f2ecdc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,13 +273,6 @@ main .service-section {
       -ms-flex-align: center;
           align-items: center;
   padding: 100px 100px 100px 100px;
-  color: #f2ecdc;
-}
-
-main .service-section h1 {
-  font-weight: 200;
-  font-size: 60px;
-  margin-bottom: 10px;
 }
 
 main .service-section h4 {
@@ -276,6 +283,9 @@ main .service-section .service-list {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 1rem;
@@ -298,8 +308,8 @@ main .article-section {
   position: -webkit-sticky;
   position: sticky;
   z-index: 30;
-  top: 0;
-  padding: 100px 450px 100px 100px;
+  top: -5500px;
+  padding: 100px 100px 100px 100px;
   background-color: #f2ecdc;
 }
 
@@ -321,6 +331,86 @@ main .article-section p {
   font-weight: 200;
   font-size: 18px;
   line-height: 1.8em;
+}
+
+main .article-section .collapsed-text {
+  display: none;
+  overflow: hidden;
+}
+
+main .testimonials-section {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 40;
+  top: 0;
+  color: #f2ecdc;
+  background-color: #25afba;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 100px 100px 100px;
+}
+
+main .testimonials-section h4 {
+  margin-bottom: 50px;
+}
+
+main .testimonials-section .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  color: #f2ecdc;
+}
+
+main .testimonials-section .cards article {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 30px;
+}
+
+main .testimonials-section .cards article .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f2ecdc;
+  border: 5px solid #25afba;
+  margin-bottom: 30px;
+}
+
+main .testimonials-section .cards article p {
+  text-align: center;
+  color: #585858;
+  font-weight: 200;
+}
+
+main .testimonials-section .cards article .author {
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+main .testimonials-section .cards article .profession {
+  text-transform: uppercase;
+  font-size: 0.7em;
 }
 
 /* font-style font-variant font-weight font-size/line-height font-family*/
@@ -371,9 +461,6 @@ main .article-section p {
   main .service-section h1 {
     font-size: 40px;
   }
-  main .service-section h4 {
-    margin-bottom: 20px;
-  }
   main .service-section .service-list {
     grid-gap: 0;
   }
@@ -381,14 +468,18 @@ main .article-section p {
     font-size: 14px;
     margin-bottom: 10px;
   }
-  main .article-section {
-    padding: 100px 50px 70px 24px;
-  }
   main .article-section h1 {
     font-size: 40px;
   }
   main .article-section p {
     font-size: 14px;
+  }
+  main .article-section,
+  main .testimonials-section {
+    padding: 50px 24px 100px 24px;
+  }
+  .title-negative {
+    font-size: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */

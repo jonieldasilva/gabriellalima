@@ -4,12 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriella Lima - Revisão de Textos</title>
-    <style>
-      body {
-        visibility: hidden;
-      }
-    </style>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
   </head>
   <body>
     <!--<nav>
@@ -68,8 +64,10 @@
         </p>
       </section>
       <section class="service-section">
-        <h1>Serviços</h1>
-        <h4>Veritatis quibusdam similique neque alias</h4>
+        <h1 class="title-negative">Serviços</h1>
+        <h4 class="subtitle-negative">
+          Veritatis quibusdam similique neque alias
+        </h4>
         <div class="service-list">
           <ul>
             <li>Ensaios</li>
@@ -107,7 +105,10 @@
           longo dessa jornada, revelando também algumas verdades e destruindo
           muitos dos mitos, comumente propagados, que acabam gerando dúvidas e
           equívocos sobre o tema. Vamos lá então. Quem é quem nesse enlace
-          profissional? <br />
+          profissional? <br />(...)
+        </p>
+        <button type="button" class="collapsible">+</button>
+        <p class="collapsed-text">
           <br />
           O autor, independente do gênero ou estilo, é um alquimista que sabe
           combinar as palavras em proporção exatas para dar significado às suas
@@ -192,8 +193,53 @@
           compositor Lulu Santos: “nós somos feitos um pro outro, pode crer, por
           isso é que eu estou aqui”. <br />
         </p>
-        <button>+</button>
-        <p>Ler texto inteiro</p>
+      </section>
+      <section class="testimonials-section">
+        <h1 class="title-negative">Depoimentos</h1>
+        <h4 class="subtitle-negative">
+          Palavras gentis de clientes felizes.
+        </h4>
+        <div class="cards">
+          <article class="card card-testimonial">
+            <img
+              src="/img/avatar-margarete.jpg"
+              class="avatar"
+              alt="Imagem do depoente"
+            />
+            <p class="card-depo">
+              “Com certeza fez toda diferença escrever com a assessoria de uma
+              profissional tão competente como Gabriella.”
+            </p>
+            <p class="author">Margarete Campos</p>
+            <p class="profession">Arquiteto</p>
+          </article>
+          <article class="card card-testimonial">
+            <img
+              src="/img/avatar-mayra.jpg"
+              class="avatar"
+              alt="Imagem do depoente"
+            />
+            <p class="card-depo">
+              “Leitora criteriosa também se posicionou criticamente ao texto,
+              auxiliando a eliminar excessos e melhorando a fluidez.”
+            </p>
+            <p class="author">Mayra Simone dos Santos</p>
+            <p class="profession">Arquiteto</p>
+          </article>
+          <article class="card card-testimonial">
+            <img
+              src="/img/avatar-margarete.jpg"
+              class="avatar"
+              alt="Imagem do depoente"
+            />
+            <p class="card-depo">
+              “Com certeza fez toda diferença escrever com a assessoria de uma
+              profissional tão competente como Gabriella.”
+            </p>
+            <p class="author">Margarete Campos</p>
+            <p class="profession">Arquiteto</p>
+          </article>
+        </div>
       </section>
     </main>
     <!--     
