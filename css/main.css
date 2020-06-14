@@ -362,7 +362,7 @@ main .testimonials-section {
   padding: 100px 100px 100px 100px;
   color: #f2ecdc;
   z-index: 40;
-  top: 0;
+  top: -1000px;
   background-color: #25afba;
 }
 
@@ -377,6 +377,7 @@ main .testimonials-section .cards {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
   color: #f2ecdc;
+  margin-bottom: 100px;
 }
 
 main .testimonials-section .cards article {
@@ -426,6 +427,7 @@ main .contact-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  top: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -433,7 +435,10 @@ main .contact-section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 100px 100px 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 100px 100px 400px;
   background-color: #f2ecdc;
   color: #25afba;
   z-index: 40;
