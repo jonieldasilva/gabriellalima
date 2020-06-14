@@ -74,11 +74,18 @@ button {
   font-weight: 200;
   border-radius: 50%;
 }
-.title-negative {
+.section-title {
   font-weight: 200;
   font-size: 60px;
   margin-bottom: 10px;
 }
+.negative {
+  color: $color1;
+}
+.positive {
+  color: $color3;
+}
+
 button:hover {
   cursor: pointer;
   color: $color1;
@@ -258,7 +265,6 @@ main {
       margin-bottom: 40px;
     }
     h4 {
-      color: $color3;
       text-align: left;
     }
     p {
@@ -280,13 +286,12 @@ main {
     position: sticky;
     display: flex;
     flex-direction: column;
-    z-index: 40;
-    top: 0;
-    color: $color1;
-    background-color: $color3;
-    display: flex;
     align-items: center;
     padding: 100px 100px 100px 100px;
+    color: $color1;
+    z-index: 40;
+    top: 0;
+    background-color: $color3;
     h4 {
       margin-bottom: 50px;
     }
@@ -329,8 +334,27 @@ main {
       }
     }
   }
+  /********** CONTACT SECTION *********/
+  .contact-section {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 100px 100px 100px;
+    background-color: $color1;
+    color: $color3;
+    z-index: 40;
+    h1 {
+      margin-bottom: 100px;
+    }
+  }
 }
-
+footer {
+  position: sticky;
+  height: 200px;
+  z-index: 60;
+  background-color: $color3;
+}
 /* font-style font-variant font-weight font-size/line-height font-family*/
 
 @media only screen and (max-width: 600px) {

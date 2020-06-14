@@ -1,6 +1,6 @@
 // script
 window.onload = init;
-
+document.getElementsByClassName("quote-line").focus();
 function init() {
   var coll = document.getElementsByClassName("collapsible");
   var i;

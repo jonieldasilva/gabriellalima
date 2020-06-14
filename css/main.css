@@ -66,10 +66,18 @@ button {
   border-radius: 50%;
 }
 
-.title-negative {
+.section-title {
   font-weight: 200;
   font-size: 60px;
   margin-bottom: 10px;
+}
+
+.negative {
+  color: #f2ecdc;
+}
+
+.positive {
+  color: #25afba;
 }
 
 button:hover {
@@ -208,6 +216,7 @@ main {
   /********** SERVICE SECTION *********/
   /********** ARTICLE SECTION *********/
   /********** TESTIMONIAL SECTION *********/
+  /********** CONTACT SECTION *********/
 }
 
 main .intro-section {
@@ -322,7 +331,6 @@ main .article-section h1 {
 }
 
 main .article-section h4 {
-  color: #25afba;
   text-align: left;
 }
 
@@ -348,15 +356,14 @@ main .testimonials-section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 40;
-  top: 0;
-  color: #f2ecdc;
-  background-color: #25afba;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 100px 100px 100px 100px;
+  color: #f2ecdc;
+  z-index: 40;
+  top: 0;
+  background-color: #25afba;
 }
 
 main .testimonials-section h4 {
@@ -411,6 +418,37 @@ main .testimonials-section .cards article .author {
 main .testimonials-section .cards article .profession {
   text-transform: uppercase;
   font-size: 0.7em;
+}
+
+main .contact-section {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 100px 100px 100px;
+  background-color: #f2ecdc;
+  color: #25afba;
+  z-index: 40;
+}
+
+main .contact-section h1 {
+  margin-bottom: 100px;
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 200px;
+  z-index: 60;
+  background-color: #25afba;
 }
 
 /* font-style font-variant font-weight font-size/line-height font-family*/

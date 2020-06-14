@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriella Lima - Revisão de Textos</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css" onload="this.media='all'" />
     <script src="js/main.js"></script>
   </head>
   <body>
@@ -38,7 +38,7 @@
       </div>
       <!-- <img src="img/ornament.svg" class="ornamento" alt="ornamento" /> -->
       <div class="headergroup">
-        <h1>
+        <h1 class="quote-line">
           “A simplicidade é o último <br />
           grau de sofisticação”
         </h1>
@@ -64,7 +64,7 @@
         </p>
       </section>
       <section class="service-section">
-        <h1 class="title-negative">Serviços</h1>
+        <h1 class="section-title negative">Serviços</h1>
         <h4 class="subtitle-negative">
           Veritatis quibusdam similique neque alias
         </h4>
@@ -90,8 +90,10 @@
         </div>
       </section>
       <section class="article-section">
-        <h4>Por que um revisor?</h4>
-        <h1>O autor e o revisor: um romance ideal</h1>
+        <h4 class="positive">Por que um revisor?</h4>
+        <h1 class="section-title positive">
+          O autor e o revisor: um romance ideal
+        </h1>
         <p>
           A parceria entre o autor e o revisor de texto se estabelece na base da
           confiança, dedicação e cumplicidade. Pode até parecer uma descrição de
@@ -194,8 +196,9 @@
           isso é que eu estou aqui”. <br />
         </p>
       </section>
+      <!--TESTIMONIALS -------------------------->
       <section class="testimonials-section">
-        <h1 class="title-negative">Depoimentos</h1>
+        <h1 class="section-title negative">Depoimentos</h1>
         <h4 class="subtitle-negative">
           Palavras gentis de clientes felizes.
         </h4>
@@ -241,21 +244,16 @@
           </article>
         </div>
       </section>
-    </main>
-    <!--     
-    <main>
-      <section class="services" id="servicos"><h2>Serviços</h2></section>
-      <section class="depos" id="depoimentos"><h2>Depoimentos</h2></section>
-      <section class="articles" id="artigos"><h2>Artigo</h2></section>
 
-      <section class="contact" id="contato">
+      <!--CONTACT FORM -------------------------->
+      <section class="contact-section" id="contato">
+        <h1 class="section-title positive">Entre em contato</h1>
         <form
           name="contact"
           method="POST"
           data-netlify="true"
           action="/pages/success"
         >
-          <h2>Entre em contato</h2>
           <p>
             <label>Your Name: <input type="text" name="name" /></label>
           </p>
@@ -282,6 +280,6 @@
     </main>
     <footer>
       <h2>Footer</h2>
-    </footer> -->
+    </footer>
   </body>
 </html>
