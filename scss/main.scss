@@ -17,6 +17,7 @@ Tags: Website
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,regular,500,600,700");
 
+$color0: #fff;
 $color1: #f2ecdc;
 $color2: #1a81a8;
 $color3: #25afba;
@@ -30,6 +31,7 @@ $indent: 50px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: $color6;
 }
 body {
   visibility: visible;
@@ -55,11 +57,16 @@ body {
     font-size: 8px;
   }
 }*/
+/* GENERAL SETTINGS */
+h1 {
+  text-align: center;
+}
 h4 {
-  font-family: Raleway;
+  text-align: center;
+  // font-family: Raleway;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -72,7 +79,7 @@ button {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 200;
-  border-radius: 50%;
+  border-radius: 5px;
 }
 .section-title {
   font-weight: 200;
@@ -99,40 +106,34 @@ button:hover {
     background-color: $color3;
   }
 }
-header {
-  * {
-    color: $color1;
-  }
-
+@mixin flex-section() {
   display: flex;
-  position: sticky;
-  top: 0;
-  z-index: 0;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+}
+header {
+  position: sticky;
+  @include flex-section;
+  justify-content: flex-start;
+  top: 15px;
+  z-index: 0;
   animation-name: example;
   animation-duration: 1s;
-  height: 90vh;
-  /*header sem ornamento*/
-  // background: url(../img/bg1.jpg) no-repeat;
-  // background-color: $color3;
-  // background-size: cover;
-  // background-position: center center;
-  /*header com ornamento*/
+  height: calc(100vh - 30px);
   background: url(../img/ornament.svg) no-repeat, url(../img/bg1.jpg) no-repeat;
-  background-color: $color3;
-  background-size: 40vh, cover;
   background-position: -100px 60vh, center center;
-  .logo {
+  background-size: 50vh, cover;
+  background-color: $color3;
+  * {
+    color: $color1;
     position: relative;
-    display: flex;
+  }
+  .logo {
+    @include flex-section;
+    // justify-content: space-between;
+    position: relative;
     margin: 0 auto;
     top: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    // background-color: red;
     height: 100px;
     width: 200px;
 
@@ -142,18 +143,17 @@ header {
       font-family: Raleway;
       font-weight: 300;
       text-align: center;
-      letter-spacing: 4px;
-      font-size: 8px;
+      letter-spacing: 6px;
+      font-size: 9px;
+      margin-top: 5px;
     }
   }
   .headergroup {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-section;
     justify-content: center;
-    height: 300px;
+    // height: 300px;
     top: 100px;
+    margin-bottom: 150px;
   }
   h1 {
     font-family: "TT Bluescreens Thin";
@@ -177,18 +177,19 @@ header {
     width: 100px;
     background-color: $color1;
   }
+  .arrow-down {
+    bottom: 20px;
+  }
 }
 main {
   /********** INTRO SECTION *********/
   .intro-section {
-    background-color: $color1;
     position: sticky;
+    @include flex-section;
+    background-color: $color1;
     top: 0;
     z-index: 10;
     padding: 100px 100px 200px 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     .avatar {
       width: 100px;
@@ -205,24 +206,39 @@ main {
         color: $color2;
       }
       color: $color6;
-      font-weight: 300;
+      font-weight: 200;
       text-align: center;
-      font-size: 24px;
-      line-height: 1.5em;
+      font-size: 1.1em;
+      line-height: 1.6em;
+      letter-spacing: 0.01em;
+    }
+    a {
+      background-color: white;
+      color: $color3;
+      font-weight: 300;
+      font-size: 0.9em;
+      border-radius: 5px;
+      padding: 0 0.5em;
+      text-decoration: none;
+    }
+    a:hover {
+      opacity: 0.7;
+      background-color: $color3;
+      color: $color1;
     }
   }
   /********** SERVICE SECTION *********/
   .service-section {
     position: sticky;
+    @include flex-section;
     z-index: 20;
     top: 0;
     background-color: $color3;
-    color: $color1;
-    // height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 100px 100px 100px 100px;
+    // height: 700px;
+    * {
+      color: $color1;
+    }
 
     h4 {
       margin-bottom: 100px;
@@ -253,6 +269,7 @@ main {
   /********** ARTICLE SECTION *********/
   .article-section {
     position: sticky;
+
     z-index: 30;
     top: -5500px;
     padding: 100px 100px 100px 100px;
@@ -284,15 +301,16 @@ main {
   /********** TESTIMONIAL SECTION *********/
   .testimonials-section {
     position: sticky;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-section;
     padding: 100px 100px 100px 100px;
-    color: $color1;
     z-index: 40;
     top: -1000px;
+    background: url(../img/gabriella_profile.png) no-repeat;
+    background-position: bottom right;
+    background-size: 50vh;
     background-color: $color3;
     h4 {
+      color: $color1;
       margin-bottom: 50px;
     }
     .cards {
@@ -300,13 +318,11 @@ main {
       // align-items: center;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-gap: 1rem;
-      color: $color1;
+      // color: $color1;
       margin-bottom: 100px;
       article {
+        @include flex-section;
         border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         background-color: #fff;
         padding: 30px;
         .avatar {
@@ -314,8 +330,6 @@ main {
           height: 80px;
           border-radius: 50%;
           background-color: $color1;
-          // background: url("../img/mussum.jpg") no-repeat;
-          // background-size: cover;
           border: 5px solid $color3;
           margin-bottom: 30px;
         }
@@ -323,14 +337,37 @@ main {
           text-align: center;
           color: $color6;
           font-weight: 200;
+          font-size: 0.8em;
+        }
+        .card-depo::before {
+          color: $color6;
+          opacity: 0.5;
+          content: open-quote;
+          font-family: "";
+          font-size: 4em;
+          font-family: serif;
+          line-height: 0.1em;
+          // margin-right: 0.25em;
+          vertical-align: -0.1em;
+        }
+        .card-depo::after {
+          color: $color3;
+          content: close-quote;
+          font-family: "";
+          font-size: 1.5em;
+          font-family: serif;
+          line-height: 0.1em;
+          // margin-right: 0.25em;
+          vertical-align: -0.2em;
         }
         .author {
           font-weight: 600;
-          margin-top: 40px;
+          margin-top: 30px;
         }
         .profession {
+          font-weight: 300;
           text-transform: uppercase;
-          font-size: 0.7em;
+          font-size: 0.6em;
         }
       }
     }
@@ -338,25 +375,113 @@ main {
   /********** CONTACT SECTION *********/
   .contact-section {
     position: sticky;
-    display: flex;
-    top: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 100px 100px 400px;
+    @include flex-section;
+    // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    // grid-gap: 1rem;
+    padding: 100px;
     background-color: $color1;
     color: $color3;
     z-index: 40;
+
     h1 {
-      margin-bottom: 100px;
+      // margin-bottom: 100px;
+      font-size: 50px;
+    }
+    h4 {
+      margin-bottom: 50px;
+      color: $color3;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+
+      // @include flex-section;
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: Raleway;
+        font-size: 0.8em;
+      }
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-family: Raleway;
+        font-size: 0.8em;
+
+        // resize: none;
+      }
+
+      // input[type="submit"] {
+      //   width: 100%;
+      //   background-color: #4caf50;
+      //   color: white;
+      //   padding: 14px 20px;
+      //   margin: 8px 0;
+      //   border: none;
+      //   border-radius: 4px;
+      //   cursor: pointer;
+      // }
+      button {
+        width: 100%;
+        background-color: $color3;
+        color: $color1;
+      }
+      button:hover {
+        width: 100%;
+        background-color: $color0;
+        color: $color3;
+      }
+      // input[type="submit"]:hover {
+      //   background-color: #45a049;
+      // }
+      // background-color: $color4;
+      width: 50%;
+    }
+    .phone {
+      font-weight: 400;
+      font-size: 1.3em;
+      margin-top: 20px;
+    }
+    .phone::before {
+      content: "\f095";
+      font-weight: normal;
+      text-decoration: inherit;
+      font-size: 18px;
+      // position: absolute;
     }
   }
 }
 footer {
-  position: sticky;
-  height: 200px;
-  z-index: 60;
-  background-color: $color3;
+  @include flex-section;
+  justify-items: center;
+  position: relative;
+  margin: 0 auto;
+  top: 20px;
+  height: 150px;
+  width: 200px;
+
+  p {
+    text-transform: uppercase;
+    color: $color1;
+    font-family: Raleway;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 6px;
+    font-size: 9px;
+    margin-top: 5px;
+  }
 }
 /* font-style font-variant font-weight font-size/line-height font-family*/
 

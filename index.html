@@ -32,7 +32,7 @@
           src="img/gabilogo.svg"
           id="logosign"
           alt="Logo Gabriella Lima"
-          width="160px"
+          width="180px"
         />
         <p>Revisão de Textos</p>
       </div>
@@ -47,6 +47,7 @@
           <h4>Leonardo da Vinci</h4>
         </div>
       </div>
+      <div class="arrow-down"><p>scroll down</p></div>
     </header>
     <main>
       <section class="intro-section">
@@ -59,13 +60,14 @@
           doutorado pela Universidade de São Paulo e University of Westminster
           em Londres; publiquei artigos em revistas de circulação nacional e
           internacional; produzi capítulos de livros e anais de congressos,
-          assim como orientei várias monografias de conclusão de curso.<br />Se
-          eu puder ajudar em algo, basta entrar em contato.
+          assim como orientei várias monografias de conclusão de curso.<br /><br />Se
+          eu puder ajudar em algo, basta entrar em
+          <a href="#contato">contato.</a>
         </p>
       </section>
       <section class="service-section">
         <h1 class="section-title negative">Serviços</h1>
-        <h4 class="subtitle-negative">
+        <h4 class="subtitle-negative negative">
           Veritatis quibusdam similique neque alias
         </h4>
         <div class="service-list">
@@ -210,7 +212,7 @@
               alt="Imagem do depoente"
             />
             <p class="card-depo">
-              “Com certeza fez toda diferença escrever com a assessoria de uma
+              Com certeza fez toda diferença escrever com a assessoria de uma
               profissional tão competente como Gabriella.”
             </p>
             <p class="author">Margarete Campos</p>
@@ -223,8 +225,8 @@
               alt="Imagem do depoente"
             />
             <p class="card-depo">
-              “Leitora criteriosa também se posicionou criticamente ao texto,
-              auxiliando a eliminar excessos e melhorando a fluidez.”
+              Leitora criteriosa também se posicionou criticamente ao texto,
+              auxiliando a eliminar excessos e melhorando a fluidez.
             </p>
             <p class="author">Mayra Simone dos Santos</p>
             <p class="profession">Arquiteto</p>
@@ -236,9 +238,9 @@
               alt="Imagem do depoente"
             />
             <p class="card-depo">
-              “É impressionante a extensão de seu vocabulário, atenta aos
-              mínimos detalhes e, acima de tudo, Gabriella se joga no tema, um
-              verdadeiro mergulho! ”
+              É impressionante a extensão de seu vocabulário, atenta aos mínimos
+              detalhes e, acima de tudo, Gabriella se joga no tema, um
+              verdadeiro mergulho!
             </p>
             <p class="author">Wellyson Reis</p>
             <p class="profession">Estudante de Jornalismo</p>
@@ -250,22 +252,37 @@
               alt="Imagem do depoente"
             />
             <p class="card-depo">
-              “Texto corrigido com perfeição, especialmente pelo modo como ela
+              Texto corrigido com perfeição, especialmente pelo modo como ela
               conseguiu reorganizar os parágrafos, corrigir os erros gramaticais
               e incorporar novas palavras, tornando assim a leitura mais fluida,
-              direta e, ao mesmo tempo, sensível. ”
+              direta e, ao mesmo tempo, sensível.
             </p>
             <p class="author">Klecius Cardim</p>
             <p class="profession">Médico Gastroenterologista</p>
           </article>
         </div>
         <h1 class="section-title negative">Trajetória</h1>
-        <h4 class="subtitle-negative">Estrada</h4>
+        <h4 class="subtitle-negative">CURRICULUM</h4>
+
+        <p>
+          Eligendi iusto asperiores in. Dolore doloremque id ipsam consequatur
+          dicta cum nisi libero. Eaque praesentium necessitatibus odio aut nam
+          et. Incidunt id eaque commodi molestiae est. Aliquam cupiditate eos
+          hic quaerat repudiandae. Eligendi iusto asperiores in. Dolore
+          doloremque id ipsam consequatur dicta cum nisi libero. Eaque
+          praesentium necessitatibus odio aut nam et. Incidunt id eaque commodi
+          molestiae est. Aliquam cupiditate eos hic quaerat repudiandae.
+        </p>
       </section>
 
       <!--CONTACT FORM -------------------------->
       <section class="contact-section" id="contato">
         <h1 class="section-title positive">Entre em contato</h1>
+        <h4 class="subtitle-negative">
+          Para solicitação de orçamento ou simplesmente para receber notícias da
+          minha newsletter.
+        </h4>
+
         <form
           name="contact"
           method="POST"
@@ -273,12 +290,16 @@
           action="/pages/success"
         >
           <p>
-            <label>Your Name: <input type="text" name="name" /></label>
+            <label
+              ><input type="text" name="name" placeholder="Seu nome.."
+            /></label>
           </p>
           <p>
-            <label>Your Email: <input type="email" name="email" /></label>
+            <label
+              ><input type="email" name="email" placeholder="Seu email..."
+            /></label>
           </p>
-          <p>
+          <!-- <p>
             <label
               >Your Role:
               <select name="role[]" multiple>
@@ -286,18 +307,29 @@
                 <option value="follower">Follower</option>
               </select></label
             >
-          </p>
+          </p> -->
           <p>
-            <label>Message: <textarea name="message"></textarea></label>
+            <label>
+              <textarea name="message" placeholder="Sua mensagem..."></textarea>
+            </label>
           </p>
+          <!-- <p class="newsletter-check">Inscrever-se na minha newletter</p> -->
           <p>
-            <button type="submit">Send</button>
+            <button type="submit">Enviar</button>
           </p>
         </form>
+        <p class="phone positive">Ou pelo telefone: +55 11 97615-xxxx</p>
       </section>
     </main>
     <footer>
-      <h2>Footer</h2>
+      <div class="logo">
+        <img
+          src="img/gabilogo.svg"
+          id="logosign"
+          alt="Logo Gabriella Lima"
+          width="180px"
+        />
+        <p>Revisão de Textos</p>
     </footer>
   </body>
 </html>
