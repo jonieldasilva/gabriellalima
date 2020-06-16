@@ -394,12 +394,9 @@ main .testimonials-section {
   padding: 100px 100px 100px 100px;
   z-index: 40;
   top: -1000px;
-<<<<<<< HEAD
   background: url(../img/gabriella_profile.png) no-repeat;
   background-position: bottom right;
   background-size: 50vh;
-=======
->>>>>>> 272f2ecb218ca6dc79cf93a2d1b27f378d59f322
   background-color: #25afba;
 }
 
@@ -414,10 +411,6 @@ main .testimonials-section .cards {
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
-<<<<<<< HEAD
-=======
-  color: #f2ecdc;
->>>>>>> 272f2ecb218ca6dc79cf93a2d1b27f378d59f322
   margin-bottom: 100px;
 }
 
@@ -491,7 +484,6 @@ main .contact-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -499,14 +491,7 @@ main .contact-section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
   padding: 100px;
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 100px 100px 100px 400px;
->>>>>>> 272f2ecb218ca6dc79cf93a2d1b27f378d59f322
   background-color: #f2ecdc;
   color: #25afba;
   z-index: 40;
