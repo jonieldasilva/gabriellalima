@@ -10,13 +10,16 @@ Tags: Website
   font-family: "TT Bluescreens Thin";
   src: url("TTBluescreens-Thin.eot");
   /* IE9 Compat Mod  es */
-  src: url("TTBluescreens-Thin.eot?#iefix") format("embedded-opentype"), url("TTBluescreens-Thin.woff") format("woff"), url("TTBluescreens-Thin.ttf") format("truetype"), url("TTBluescreens-Thin.svg#svgFontName") format("svg");
+  src: url("TTBluescreens-Thin.eot?#iefix") format("embedded-opentype"),
+    url("TTBluescreens-Thin.woff") format("woff"),
+    url("TTBluescreens-Thin.ttf") format("truetype"),
+    url("TTBluescreens-Thin.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -114,12 +117,12 @@ header {
   z-index: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-animation-name: example;
-          animation-name: example;
+  animation-name: example;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   height: 90vh;
   /*header sem ornamento*/
   /*header com ornamento*/
@@ -142,14 +145,14 @@ header .logo {
   top: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100px;
   width: 200px;
 }
@@ -171,14 +174,14 @@ header .headergroup {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 300px;
   top: 100px;
 }
@@ -197,11 +200,11 @@ header .quote-signature {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 header .linha {
@@ -231,14 +234,14 @@ main .intro-section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 main .intro-section .avatar {
@@ -276,11 +279,11 @@ main .service-section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 100px 100px 100px 100px;
 }
 
@@ -293,10 +296,10 @@ main .service-section .service-list {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: (minmax(100px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 1rem;
   color: #f2ecdc;
 }
@@ -354,11 +357,11 @@ main .testimonials-section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 100px 100px 100px 100px;
   color: #f2ecdc;
   z-index: 40;
@@ -373,8 +376,8 @@ main .testimonials-section h4 {
 main .testimonials-section .cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
   color: #f2ecdc;
 }
@@ -386,11 +389,11 @@ main .testimonials-section .cards article {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #fff;
   padding: 30px;
 }
@@ -428,11 +431,11 @@ main .contact-section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 100px 100px 100px 100px;
   background-color: #f2ecdc;
   color: #25afba;
