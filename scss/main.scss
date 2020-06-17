@@ -2,9 +2,13 @@
 
 Author: Joniel da Silva
 Author URI: https://jonieldasilva.com
-Tags: Website
+Tags: Website 
 
 */
+@import "fontawesome.scss";
+@import "_icons.scss";
+@import "solid.scss";
+@import "brands.scss";
 @font-face {
   font-family: "TT Bluescreens Thin";
   src: url("TTBluescreens-Thin.eot"); /* IE9 Compat Mod  es */
@@ -32,6 +36,7 @@ $indent: 50px;
   margin: 0;
   padding: 0;
   color: $color6;
+  font-family: Raleway;
 }
 body {
   visibility: visible;
@@ -256,9 +261,15 @@ main {
           display: block;
           // width: 200px;
           margin-bottom: 10px;
+          font-weight: 400;
+          font-size: 1.1em;
         }
+        @extend %fa-icon;
+        @extend .fas;
         li:before {
-          content: "\2713";
+          @extend %fa-icon;
+          @extend .fas;
+          content: fa-content($fa-var-check);
           display: inline-block;
           color: $color1;
           padding: 0 6px 0 0;
@@ -340,9 +351,9 @@ main {
           font-size: 0.8em;
         }
         .card-depo::before {
+          content: open-quote;
           color: $color6;
           opacity: 0.5;
-          content: open-quote;
           font-family: "";
           font-size: 4em;
           font-family: serif;
@@ -437,6 +448,7 @@ main {
         width: 100%;
         background-color: $color3;
         color: $color1;
+        margin-bottom: 40px;
       }
       button:hover {
         width: 100%;
@@ -450,16 +462,26 @@ main {
       width: 50%;
     }
     .phone {
-      font-weight: 400;
-      font-size: 1.3em;
-      margin-top: 20px;
-    }
-    .phone::before {
-      content: "\f095";
-      font-weight: normal;
-      text-decoration: inherit;
-      font-size: 18px;
-      // position: absolute;
+      // background-color: red;
+      width: 100%;
+      text-align: center;
+      font-family: Raleway;
+      font-size: 1.1em;
+      display: inline;
+      &::before {
+        display: inline;
+        @extend %fa-icon;
+        @extend .fas;
+        content: fa-content($fa-var-phone-square);
+        font-size: 1.33em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.1em;
+      }
+      a {
+        color: $color3;
+        text-decoration: none;
+      }
     }
   }
 }
