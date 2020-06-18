@@ -280,33 +280,53 @@ main {
   /********** ARTICLE SECTION *********/
   .article-section {
     position: sticky;
-
     z-index: 30;
     top: -5500px;
     padding: 100px 100px 100px 100px;
     background-color: $color1;
-    h1 {
-      font-weight: 200;
-      font-size: 50px;
-      margin-bottom: 10px;
-      color: $color3;
-      margin-bottom: 40px;
-    }
-    h4 {
-      text-align: left;
-    }
-    p {
-      color: #585858;
-      font-weight: 200;
-      // text-align: center;
-      font-size: 18px;
-      line-height: 1.8em;
-    }
-    .collapsed-text {
-      // padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      // background-color: #f1f1f1;
+    wrap {
+      @include flex-section();
+      justify-content: flex-start;
+      h1 {
+        font-weight: 200;
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: $color3;
+        margin-bottom: 40px;
+      }
+
+      h4 {
+        text-align: left;
+      }
+      p {
+        color: #585858;
+        font-weight: 200;
+        // text-align: center;
+        font-size: 18px;
+        line-height: 1.8em;
+      }
+      .expand {
+        display: flex;
+        flex-direction: row;
+        // * {
+        //   display: inline;
+        // }
+        .cta {
+          background-color: white;
+        }
+        hr {
+          width: 100%;
+        }
+      }
+      .instruction {
+        background-color: white;
+      }
+      .collapsed-text {
+        // padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        // background-color: #f1f1f1;
+      }
     }
   }
   /********** TESTIMONIAL SECTION *********/
@@ -388,9 +408,10 @@ main {
       // grid-gap: 1rem;
       // background-color: yellow;
       ul {
-        width: 50%;
+        width: 60%;
         li {
           color: $color1;
+          margin-bottom: 1em;
         }
       }
       .spacer {

@@ -12177,7 +12177,23 @@ main .article-section {
   background-color: #f2ecdc;
 }
 
-main .article-section h1 {
+main .article-section wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .article-section wrap h1 {
   font-weight: 200;
   font-size: 50px;
   margin-bottom: 10px;
@@ -12185,18 +12201,40 @@ main .article-section h1 {
   margin-bottom: 40px;
 }
 
-main .article-section h4 {
+main .article-section wrap h4 {
   text-align: left;
 }
 
-main .article-section p {
+main .article-section wrap p {
   color: #585858;
   font-weight: 200;
   font-size: 18px;
   line-height: 1.8em;
 }
 
-main .article-section .collapsed-text {
+main .article-section wrap .expand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .article-section wrap .expand .cta {
+  background-color: white;
+}
+
+main .article-section wrap .expand hr {
+  width: 100%;
+}
+
+main .article-section wrap .instruction {
+  background-color: white;
+}
+
+main .article-section wrap .collapsed-text {
   display: none;
   overflow: hidden;
 }
@@ -12307,11 +12345,12 @@ main .testimonials-section .cv {
 }
 
 main .testimonials-section .cv ul {
-  width: 50%;
+  width: 60%;
 }
 
 main .testimonials-section .cv ul li {
   color: #f2ecdc;
+  margin-bottom: 1em;
 }
 
 main .testimonials-section .cv .spacer {
