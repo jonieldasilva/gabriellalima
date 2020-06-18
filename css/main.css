@@ -12304,7 +12304,6 @@ main .testimonials-section .cards article .profession {
 main .testimonials-section .cv {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  background-color: yellow;
 }
 
 main .testimonials-section .cv ul {
