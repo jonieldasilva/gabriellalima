@@ -12301,6 +12301,25 @@ main .testimonials-section .cards article .profession {
   font-size: 0.6em;
 }
 
+main .testimonials-section .cv {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  background-color: yellow;
+}
+
+main .testimonials-section .cv ul {
+  width: 50%;
+}
+
+main .testimonials-section .cv ul li {
+  color: #f2ecdc;
+}
+
+main .testimonials-section .cv .spacer {
+  background-color: red;
+  width: 50%;
+}
+
 main .contact-section {
   position: -webkit-sticky;
   position: sticky;
@@ -12382,11 +12401,10 @@ main .contact-section form button:hover {
 }
 
 main .contact-section .phone {
-  width: 100%;
+  display: inline;
   text-align: center;
   font-family: Raleway;
   font-size: 1.1em;
-  display: inline;
 }
 
 main .contact-section .phone::before {

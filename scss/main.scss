@@ -382,6 +382,22 @@ main {
         }
       }
     }
+    .cv {
+      // width: 50%;
+      grid-template-columns: 1fr 1fr 1fr;
+      // grid-gap: 1rem;
+      background-color: yellow;
+      ul {
+        width: 50%;
+        li {
+          color: $color1;
+        }
+      }
+      .spacer {
+        background-color: red;
+        width: 50%;
+      }
+    }
   }
   /********** CONTACT SECTION *********/
   .contact-section {
@@ -463,11 +479,11 @@ main {
     }
     .phone {
       // background-color: red;
-      width: 100%;
+      // width: 100%;
+      display: inline;
       text-align: center;
       font-family: Raleway;
       font-size: 1.1em;
-      display: inline;
       &::before {
         display: inline;
         @extend %fa-icon;
