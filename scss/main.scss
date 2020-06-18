@@ -202,7 +202,7 @@ main {
       border-radius: 50px;
       margin-bottom: 40px;
       background-color: $color3;
-      background: url(../img/didi.jpg) no-repeat;
+      background: url("../img/avatar-gabi.jpg") no-repeat;
       background-size: cover;
       border: 5px solid $color3;
     }
@@ -231,6 +231,9 @@ main {
       background-color: $color3;
       color: $color1;
     }
+    // button {
+    //   display: block;
+    // }
   }
   /********** SERVICE SECTION *********/
   .service-section {
@@ -250,17 +253,21 @@ main {
     }
     .service-list {
       width: 100%;
-      display: grid;
-      align-items: center;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      grid-gap: 1rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      // display: grid;
+      // align-items: center;
+      // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      // grid-gap: 1rem;
       color: $color1;
 
       ul {
         li {
           display: block;
           // width: 200px;
-          margin-bottom: 10px;
+
+          margin: 0 60px 20px;
           font-weight: 400;
           font-size: 1.1em;
         }
@@ -283,6 +290,7 @@ main {
     z-index: 30;
     top: -5500px;
     padding: 100px 100px 100px 100px;
+    // background-image: url("../img/pen.jpg");
     background-color: $color1;
     wrap {
       @include flex-section();
@@ -294,7 +302,10 @@ main {
         color: $color3;
         margin-bottom: 40px;
       }
-
+      img {
+        position: absolute;
+        mix-blend-mode: multiply;
+      }
       h4 {
         text-align: left;
       }

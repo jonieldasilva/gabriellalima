@@ -12080,7 +12080,7 @@ main .intro-section .avatar {
   border-radius: 50px;
   margin-bottom: 40px;
   background-color: #25afba;
-  background: url(../img/didi.jpg) no-repeat;
+  background: url("../img/avatar-gabi.jpg") no-repeat;
   background-size: cover;
   border: 5px solid #25afba;
 }
@@ -12143,20 +12143,22 @@ main .service-section h4 {
 
 main .service-section .service-list {
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #f2ecdc;
 }
 
 main .service-section .service-list ul li {
   display: block;
-  margin-bottom: 10px;
+  margin: 0 60px 20px;
   font-weight: 400;
   font-size: 1.1em;
 }
@@ -12199,6 +12201,11 @@ main .article-section wrap h1 {
   margin-bottom: 10px;
   color: #25afba;
   margin-bottom: 40px;
+}
+
+main .article-section wrap img {
+  position: absolute;
+  mix-blend-mode: multiply;
 }
 
 main .article-section wrap h4 {
