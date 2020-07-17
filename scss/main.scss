@@ -117,7 +117,7 @@ button:hover {
   align-items: center;
 }
 header {
-  position: sticky;
+  // position: sticky;
   @include flex-section;
   justify-content: flex-start;
   top: 15px;
@@ -161,11 +161,13 @@ header {
     margin-bottom: 150px;
   }
   h1 {
-    font-family: "TT Bluescreens Thin";
+    // font-family: "TT Bluescreens Thin";
+    font-family: Raleway;
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 2em;
+    font-weight: 200;
     text-align: center;
-    line-height: 0.9em;
+    line-height: 1em;
     margin-bottom: 10px;
     // text-shadow: 0 0 40px $color2;
   }
@@ -189,7 +191,7 @@ header {
 main {
   /********** INTRO SECTION *********/
   .intro-section {
-    position: sticky;
+    // position: sticky;
     @include flex-section;
     background-color: $color1;
     top: 0;
@@ -202,7 +204,7 @@ main {
       border-radius: 50px;
       margin-bottom: 40px;
       background-color: $color3;
-      background: url(../img/didi.jpg) no-repeat;
+      background: url(../img/avatar-gabi@2x.jpg) no-repeat;
       background-size: cover;
       border: 5px solid $color3;
     }
@@ -234,7 +236,7 @@ main {
   }
   /********** SERVICE SECTION *********/
   .service-section {
-    position: sticky;
+    // position: sticky;
     @include flex-section;
     z-index: 20;
     top: 0;
@@ -279,7 +281,7 @@ main {
   }
   /********** ARTICLE SECTION *********/
   .article-section {
-    position: sticky;
+    // position: sticky;
     z-index: 30;
     top: -5500px;
     padding: 100px 100px 100px 100px;
@@ -331,7 +333,7 @@ main {
   }
   /********** TESTIMONIAL SECTION *********/
   .testimonials-section {
-    position: sticky;
+    // position: sticky;
     @include flex-section;
     padding: 100px 100px 100px 100px;
     z-index: 40;
@@ -422,7 +424,7 @@ main {
   }
   /********** CONTACT SECTION *********/
   .contact-section {
-    position: sticky;
+    // position: sticky;
     @include flex-section;
     // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     // grid-gap: 1rem;
@@ -527,7 +529,7 @@ footer {
   justify-items: center;
   position: relative;
   margin: 0 auto;
-  top: 20px;
+  // top: 20px;
   height: 150px;
   width: 200px;
 
@@ -574,7 +576,7 @@ footer {
       top: 20px;
     }
     h1 {
-      font-size: 50px;
+      font-size: 1.5em;
     }
     .quote-signature {
       width: 80%;
@@ -597,7 +599,7 @@ footer {
       }
 
       p {
-        font-size: 14px;
+        font-size: 0.8em;
         text-align: left;
       }
     }

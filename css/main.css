@@ -11932,8 +11932,6 @@ button:hover {
 }
 
 header {
-  position: -webkit-sticky;
-  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12013,11 +12011,12 @@ header .headergroup {
 }
 
 header h1 {
-  font-family: "TT Bluescreens Thin";
+  font-family: Raleway;
   text-transform: uppercase;
-  font-size: 5em;
+  font-size: 2em;
+  font-weight: 200;
   text-align: center;
-  line-height: 0.9em;
+  line-height: 1em;
   margin-bottom: 10px;
 }
 
@@ -12053,8 +12052,6 @@ main {
 }
 
 main .intro-section {
-  position: -webkit-sticky;
-  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12080,7 +12077,7 @@ main .intro-section .avatar {
   border-radius: 50px;
   margin-bottom: 40px;
   background-color: #25afba;
-  background: url(../img/didi.jpg) no-repeat;
+  background: url(../img/avatar-gabi@2x.jpg) no-repeat;
   background-size: cover;
   border: 5px solid #25afba;
 }
@@ -12115,8 +12112,6 @@ main .intro-section a:hover {
 }
 
 main .service-section {
-  position: -webkit-sticky;
-  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12169,8 +12164,6 @@ main .service-section .service-list ul li:before {
 }
 
 main .article-section {
-  position: -webkit-sticky;
-  position: sticky;
   z-index: 30;
   top: -5500px;
   padding: 100px 100px 100px 100px;
@@ -12240,8 +12233,6 @@ main .article-section wrap .collapsed-text {
 }
 
 main .testimonials-section {
-  position: -webkit-sticky;
-  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12359,8 +12350,6 @@ main .testimonials-section .cv .spacer {
 }
 
 main .contact-section {
-  position: -webkit-sticky;
-  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12473,7 +12462,6 @@ footer {
   justify-items: center;
   position: relative;
   margin: 0 auto;
-  top: 20px;
   height: 150px;
   width: 200px;
 }
@@ -12508,7 +12496,7 @@ footer p {
     top: 20px;
   }
   header h1 {
-    font-size: 50px;
+    font-size: 1.5em;
   }
   header .quote-signature {
     width: 80%;
@@ -12528,7 +12516,7 @@ footer p {
     margin-bottom: 30px;
   }
   main .intro-section p {
-    font-size: 14px;
+    font-size: 0.8em;
     text-align: left;
   }
   main .service-section {
