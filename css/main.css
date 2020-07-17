@@ -11931,6 +11931,7 @@ button:hover {
   }
 }
 
+/********** HEADER SECTION *********/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11942,9 +11943,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   top: 15px;
   z-index: 0;
   -webkit-animation-name: example;
@@ -11952,10 +11950,11 @@ header {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   height: calc(100vh - 30px);
-  background: url(../img/ornament.svg) no-repeat, url(../img/bg1.jpg) no-repeat;
+  background: url(../img/ornament.svg) no-repeat, url(../img/gabi-bg2.jpg) no-repeat;
   background-position: -100px 60vh, center center;
   background-size: 50vh, cover;
-  background-color: #25afba;
+  background-color: #f07168;
+  margin: 0 0 0 auto;
 }
 
 header * {
@@ -12003,11 +12002,10 @@ header .headergroup {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: 100px;
-  margin-bottom: 150px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  left: 10%;
+  top: 200px;
 }
 
 header h1 {
@@ -12015,7 +12013,7 @@ header h1 {
   text-transform: uppercase;
   font-size: 2em;
   font-weight: 200;
-  text-align: center;
+  text-align: left;
   line-height: 1em;
   margin-bottom: 10px;
 }
@@ -12245,8 +12243,6 @@ main .testimonials-section {
           align-items: center;
   padding: 100px 100px 100px 100px;
   z-index: 40;
-  top: -1000px;
-  background: url(../img/gabriella_profile.png) no-repeat;
   background-position: bottom right;
   background-size: 50vh;
   background-color: #25afba;
@@ -12330,25 +12326,6 @@ main .testimonials-section .cards article .profession {
   font-size: 0.6em;
 }
 
-main .testimonials-section .cv {
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
-main .testimonials-section .cv ul {
-  width: 60%;
-}
-
-main .testimonials-section .cv ul li {
-  color: #f2ecdc;
-  margin-bottom: 1em;
-}
-
-main .testimonials-section .cv .spacer {
-  background-color: red;
-  width: 50%;
-}
-
 main .contact-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12362,6 +12339,7 @@ main .contact-section {
           align-items: center;
   padding: 100px;
   background-color: #f2ecdc;
+  width: 100%;
   color: #25afba;
   z-index: 40;
 }
@@ -12397,19 +12375,6 @@ main .contact-section form textarea {
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Raleway;
-  font-size: 0.8em;
-}
-
-main .contact-section form textarea {
-  width: 100%;
-  height: 150px;
-  padding: 12px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
   font-family: Raleway;
   font-size: 0.8em;
 }
@@ -12493,10 +12458,35 @@ footer p {
     top: 10px;
   }
   header .headergroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-item-align: center;
+        align-self: center;
+    left: 0px;
+    height: 300px;
+    top: 1200px;
+  }
+  header .headergroup * {
+    text-shadow: 0 0 40px #333333;
+  }
+  header .headergroup {
     top: 20px;
   }
   header h1 {
     font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
   }
   header .quote-signature {
     width: 80%;
@@ -12541,6 +12531,18 @@ footer p {
   main .article-section,
   main .testimonials-section {
     padding: 50px 24px 100px 24px;
+  }
+  main .contact-section {
+    padding: 24px;
+    width: 100%;
+  }
+  main .contact-section form {
+    width: 100%;
+  }
+  main .contact-section form input[type="text"],
+  main .contact-section form input[type="email"],
+  main .contact-section form textarea {
+    width: 100%;
   }
   .title-negative {
     font-size: 40px;
