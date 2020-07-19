@@ -11950,7 +11950,7 @@ header {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   height: calc(100vh - 30px);
-  background: url(../img/ornament.svg) no-repeat, url(../img/gabi-bg2.jpg) no-repeat;
+  background: url(../img/ornament.svg) no-repeat, url(../img/gabi-bg3.jpg) no-repeat;
   background-position: -100px 60vh, center center;
   background-size: 50vh, cover;
   background-color: #f07168;
@@ -12256,8 +12256,8 @@ main .testimonials-section h4 {
 main .testimonials-section .cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(210px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   grid-gap: 1rem;
   margin-bottom: 100px;
 }
@@ -12292,11 +12292,14 @@ main .testimonials-section .cards article p {
   color: #585858;
   font-weight: 200;
   font-size: 0.8em;
+  line-height: 1.5em;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 main .testimonials-section .cards article .card-depo::before {
   content: open-quote;
-  color: #585858;
+  color: #25afba;
   opacity: 0.5;
   font-family: "";
   font-size: 4em;
@@ -12425,10 +12428,19 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   position: relative;
+  width: 100%;
   margin: 0 auto;
-  height: 150px;
-  width: 200px;
+  top: 120px;
+  height: 200px;
+  background-color: #25afba;
+}
+
+footer img {
+  top: 40px;
+  background-color: black;
 }
 
 footer p {
@@ -12442,7 +12454,6 @@ footer p {
   margin-top: 5px;
 }
 
-/* font-style font-variant font-weight font-size/line-height font-family*/
 @media only screen and (max-width: 600px) {
   body {
     margin: 0;

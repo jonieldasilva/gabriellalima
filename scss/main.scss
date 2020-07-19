@@ -128,7 +128,7 @@ header {
   animation-duration: 1s;
   height: calc(100vh - 30px);
   background: url(../img/ornament.svg) no-repeat,
-    url(../img/gabi-bg2.jpg) no-repeat;
+    url(../img/gabi-bg3.jpg) no-repeat;
   background-position: -100px 60vh, center center;
   background-size: 50vh, cover;
   // background-color: $color3;
@@ -364,7 +364,7 @@ main {
     .cards {
       display: grid;
       // align-items: center;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       grid-gap: 1rem;
       // color: $color1;
       margin-bottom: 100px;
@@ -386,10 +386,12 @@ main {
           color: $color6;
           font-weight: 200;
           font-size: 0.8em;
+          line-height: 1.5em;
+          justify-self: end;
         }
         .card-depo::before {
           content: open-quote;
-          color: $color6;
+          color: $color3;
           opacity: 0.5;
           font-family: "";
           font-size: 4em;
@@ -541,14 +543,23 @@ main {
   }
 }
 footer {
-  @include flex-section;
+  // @include flex-section;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-items: center;
+  align-content: center;
   position: relative;
+  width: 100%;
   margin: 0 auto;
-  // top: 20px;
-  height: 150px;
-  width: 200px;
-
+  top: 120px;
+  height: 200px;
+  // width: 200px;
+  background-color: $color3;
+  img {
+    top: 40px;
+    background-color: black;
+  }
   p {
     text-transform: uppercase;
     color: $color1;
@@ -560,7 +571,8 @@ footer {
     margin-top: 5px;
   }
 }
-/* font-style font-variant font-weight font-size/line-height font-family*/
+
+///////////////////////////////////////////////////////////
 
 @media only screen and (max-width: 600px) {
   body {
@@ -666,6 +678,7 @@ footer {
     .testimonials-section {
       padding: 50px 24px 100px 24px;
     }
+
     .contact-section {
       // position: sticky;
       // @include flex-section;
