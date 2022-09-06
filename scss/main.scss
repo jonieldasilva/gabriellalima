@@ -557,12 +557,12 @@ footer {
   // width: 200px;
   background-color: $color3;
   img {
-    top: 40px;
-    background-color: black;
+    top: 140px;
+    // background-color: black;
   }
   p {
     text-transform: uppercase;
-    color: $color1;
+    // color: $color1;
     font-family: Raleway;
     font-weight: 300;
     text-align: center;
@@ -584,7 +584,7 @@ footer {
   //   width: 100%;
   // }
   #logosign {
-    width: 200px;
+    width: 400px;
   }
   header {
     // background-size: 350px, cover;
@@ -598,7 +598,7 @@ footer {
     //   left: 0;
     // }
     .logo {
-      top: 10px;
+      top: 100px;
     }
     .headergroup {
       @include flex-section;
